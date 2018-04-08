@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.darkrai.appezmusic.MainActivity">
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Tên bài hát"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:background="@null"
+        android:src="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarSong"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_toEndOf="@+id/textViewTimeSong"
+        android:layout_toRightOf="@+id/textViewTimeSong"
+        android:background="@null"
+        android:src="@drawable/play1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarSong"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/imageButtonNext"
+        android:layout_toStartOf="@+id/imageButtonNext"
+        android:background="@null"
+        android:src="@drawable/stop1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageButtonPause"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@null"
+        android:src="@drawable/skip" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonPre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/seekBarSong" />
+
+    <TextView
+        android:id="@+id/textViewTimeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarSong"
+        android:layout_alignEnd="@+id/imageButtonPre"
+        android:layout_alignRight="@+id/imageButtonPre"
+        android:layout_marginBottom="12dp"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textViewTimeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTimeSong"
+        android:layout_alignBottom="@+id/textViewTimeSong"
+        android:layout_alignLeft="@+id/imageButtonNext"
+        android:layout_alignStart="@+id/imageButtonNext"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCd"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_above="@+id/textViewTimeSong"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/compactdiscicon" />
+
+
+</RelativeLayout>
+
